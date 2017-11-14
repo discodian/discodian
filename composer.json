@@ -1,0 +1,24 @@
+{
+    "name": "discodian/discodian",
+    "description": "The Discord bot framework for modern php",
+    "type": "project",
+    "license": "MIT",
+    "keywords": ["discord", "bot"],
+    "authors": [
+        {
+            "name": "Daniël Klabbers",
+            "email": "daniel@klabbers.email",
+            "homepage": "https://luceos.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Discodian\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">= 7.1",
+        "amphp/amp": "^2.0",
+        "amphp/socket": "^0.10.3"
+    }
+}
