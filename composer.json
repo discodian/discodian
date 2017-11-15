@@ -1,6 +1,6 @@
 {
     "name": "discodian/discodian",
-    "description": "The Discord bot framework for modern php",
+    "description": "The Discord bot toolkit for modern php",
     "type": "project",
     "license": "MIT",
     "keywords": ["discord", "bot"],
@@ -11,14 +11,13 @@
             "homepage": "https://luceos.com"
         }
     ],
-    "autoload": {
-        "psr-4": {
-            "Discodian\\": "src/"
-        }
-    },
     "require": {
-        "php": ">= 7.1",
-        "amphp/amp": "^2.0",
-        "amphp/socket": "^0.10.3"
-    }
+        "discodian/core": "@dev"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "workbench/*"
+        }
+    ]
 }
