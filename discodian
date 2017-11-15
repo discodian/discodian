@@ -4,3 +4,5 @@
 require __DIR__ . '/vendor/autoload.php';
 
 $app = require_once __DIR__ . '/vendor/discodian/core/bootstrap/app.php';
+
+$app->run();

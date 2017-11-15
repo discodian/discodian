@@ -19,5 +19,8 @@
             "type": "path",
             "url": "workbench/*"
         }
-    ]
+    ],
+    "config": {
+        "sort-packages": true
+    }
 }
