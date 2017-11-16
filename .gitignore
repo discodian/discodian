@@ -1,3 +1,4 @@
 .env
+logs/
 vendor/
 workbench/
