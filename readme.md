@@ -12,7 +12,7 @@ composer create-project discodian/discodian
 
 Copy `.env.example` to `.env` and add any necessary configuration settings.
 
-Make sure to get a bot token from the [developer portal](discordapp.com/developers/applications/me).
+Make sure to get a bot token from the [developer portal](https://discordapp.com/developers/applications/me).
 
 - New App.
 - Under section "Bot" click "Create a Bot User".
