@@ -19,6 +19,7 @@ return [
      * @see https://discordapp.com/developers/applications/me
      */
     'bot-token' => env('DISCORD_BOT_TOKEN'),
+
     'endpoints' => [
         'gateway' => 'wss://gateway.discord.gg',
         'http-api' => 'https://discordapp.com/api/'
