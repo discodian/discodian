@@ -2,6 +2,8 @@
 
 *Discodian (Discord Custodian), the extensible php toolkit for creating your own Discord bot.*
 
+> This is a work in progress. You can expect a first release before November 24th 2017.
+
 ## Installation
 
 ```bash
