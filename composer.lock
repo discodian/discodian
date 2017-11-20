@@ -12,14 +12,17 @@
             "dist": {
                 "type": "path",
                 "url": "workbench/core",
-                "reference": "0b1429617798d09a544d815cc30c3c46b9414bdc",
+                "reference": "32f5c3b12b9e3f71b0aeaf711bb14e3c2325a7ca",
                 "shasum": null
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.3.0",
+                "illuminate/cache": "5.5.*",
                 "illuminate/config": "5.5.*",
                 "illuminate/container": "5.5.*",
+                "illuminate/database": "5.5.*",
                 "illuminate/events": "5.5.*",
+                "illuminate/filesystem": "5.5.*",
                 "illuminate/support": "5.5.*",
                 "monolog/monolog": "^1.23.0",
                 "php": ">= 7.1",
@@ -341,6 +344,55 @@
             "time": "2017-03-20T17:10:46+00:00"
         },
         {
+            "name": "illuminate/cache",
+            "version": "v5.5.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/cache.git",
+                "reference": "709f1c7da68b65421b3590f5258e158232f33836"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/cache/zipball/709f1c7da68b65421b3590f5258e158232f33836",
+                "reference": "709f1c7da68b65421b3590f5258e158232f33836",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.5.*",
+                "illuminate/support": "5.5.*",
+                "php": ">=7.0"
+            },
+            "suggest": {
+                "illuminate/database": "Required to use the database cache driver (5.5.*).",
+                "illuminate/filesystem": "Required to use the file cache driver (5.5.*).",
+                "illuminate/redis": "Required to use the redis cache driver (5.5.*)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Cache\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Cache package.",
+            "homepage": "https://laravel.com",
+            "time": "2017-09-19T17:21:01+00:00"
+        },
+        {
             "name": "illuminate/config",
             "version": "v5.5.17",
             "source": {
@@ -473,6 +525,65 @@
             "time": "2017-09-19T13:09:37+00:00"
         },
         {
+            "name": "illuminate/database",
+            "version": "v5.5.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/database.git",
+                "reference": "9b3bdecfd74279d305ad1d3d56ae62b1b54a230d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/9b3bdecfd74279d305ad1d3d56ae62b1b54a230d",
+                "reference": "9b3bdecfd74279d305ad1d3d56ae62b1b54a230d",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/container": "5.5.*",
+                "illuminate/contracts": "5.5.*",
+                "illuminate/support": "5.5.*",
+                "php": ">=7.0"
+            },
+            "suggest": {
+                "doctrine/dbal": "Required to rename columns and drop SQLite columns (~2.5).",
+                "fzaninotto/faker": "Required to use the eloquent factory builder (~1.4).",
+                "illuminate/console": "Required to use the database commands (5.5.*).",
+                "illuminate/events": "Required to use the observers with Eloquent (5.5.*).",
+                "illuminate/filesystem": "Required to use the migrations (5.5.*).",
+                "illuminate/pagination": "Required to paginate the result set (5.5.*)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Database\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Database package.",
+            "homepage": "https://laravel.com",
+            "keywords": [
+                "database",
+                "laravel",
+                "orm",
+                "sql"
+            ],
+            "time": "2017-10-17T12:16:50+00:00"
+        },
+        {
             "name": "illuminate/events",
             "version": "v5.5.17",
             "source": {
@@ -516,6 +627,56 @@
             "description": "The Illuminate Events package.",
             "homepage": "https://laravel.com",
             "time": "2017-08-27T02:05:29+00:00"
+        },
+        {
+            "name": "illuminate/filesystem",
+            "version": "v5.5.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/filesystem.git",
+                "reference": "9e45ea9a64787455944bca2c6588cf2da085c360"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/filesystem/zipball/9e45ea9a64787455944bca2c6588cf2da085c360",
+                "reference": "9e45ea9a64787455944bca2c6588cf2da085c360",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.5.*",
+                "illuminate/support": "5.5.*",
+                "php": ">=7.0",
+                "symfony/finder": "~3.3"
+            },
+            "suggest": {
+                "league/flysystem": "Required to use the Flysystem local and FTP drivers (~1.0).",
+                "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (~1.0).",
+                "league/flysystem-rackspace": "Required to use the Flysystem Rackspace driver (~1.0)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Filesystem\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Filesystem package.",
+            "homepage": "https://laravel.com",
+            "time": "2017-09-13T13:01:30+00:00"
         },
         {
             "name": "illuminate/support",
@@ -1220,16 +1381,16 @@
         },
         {
             "name": "react/socket",
-            "version": "v0.8.5",
+            "version": "v0.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/socket.git",
-                "reference": "d169d1ed24e39bf182781d72ddd224dbbd449aa8"
+                "reference": "2e8660111d14df908a913a058bce4a1786de489f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/socket/zipball/d169d1ed24e39bf182781d72ddd224dbbd449aa8",
-                "reference": "d169d1ed24e39bf182781d72ddd224dbbd449aa8",
+                "url": "https://api.github.com/repos/reactphp/socket/zipball/2e8660111d14df908a913a058bce4a1786de489f",
+                "reference": "2e8660111d14df908a913a058bce4a1786de489f",
                 "shasum": ""
             },
             "require": {
@@ -1243,7 +1404,7 @@
             },
             "require-dev": {
                 "clue/block-react": "^1.2",
-                "phpunit/phpunit": "^5.0 || ^4.8"
+                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35"
             },
             "type": "library",
             "autoload": {
@@ -1263,20 +1424,20 @@
                 "reactphp",
                 "stream"
             ],
-            "time": "2017-10-23T21:45:58+00:00"
+            "time": "2017-11-18T16:47:56+00:00"
         },
         {
             "name": "react/stream",
-            "version": "v0.7.4",
+            "version": "v0.7.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/stream.git",
-                "reference": "5c7db5261b3cc7e11b8ba765bed8ba31ee745f5c"
+                "reference": "a41bbffdda5e3f4282012f8e346cef48ecb28b24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/stream/zipball/5c7db5261b3cc7e11b8ba765bed8ba31ee745f5c",
-                "reference": "5c7db5261b3cc7e11b8ba765bed8ba31ee745f5c",
+                "url": "https://api.github.com/repos/reactphp/stream/zipball/a41bbffdda5e3f4282012f8e346cef48ecb28b24",
+                "reference": "a41bbffdda5e3f4282012f8e346cef48ecb28b24",
                 "shasum": ""
             },
             "require": {
@@ -1286,7 +1447,7 @@
             },
             "require-dev": {
                 "clue/stream-filter": "~1.2",
-                "phpunit/phpunit": "^5.0 || ^4.8.10"
+                "phpunit/phpunit": "^6.4 || ^5.7 || ^4.8.35"
             },
             "suggest": {
                 "react/event-loop": "^0.4"
@@ -1312,20 +1473,20 @@
                 "stream",
                 "writable"
             ],
-            "time": "2017-10-11T17:58:46+00:00"
+            "time": "2017-11-20T11:55:48+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "v3.3.12",
+            "version": "v3.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "099302cc53e57cbb7414fd9f3ace40e5e2767c0b"
+                "reference": "63cd7960a0a522c3537f6326706d7f3b8de65805"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/099302cc53e57cbb7414fd9f3ace40e5e2767c0b",
-                "reference": "099302cc53e57cbb7414fd9f3ace40e5e2767c0b",
+                "url": "https://api.github.com/repos/symfony/console/zipball/63cd7960a0a522c3537f6326706d7f3b8de65805",
+                "reference": "63cd7960a0a522c3537f6326706d7f3b8de65805",
                 "shasum": ""
             },
             "require": {
@@ -1380,11 +1541,11 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-12T16:53:41+00:00"
+            "time": "2017-11-16T15:24:32+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v3.3.12",
+            "version": "v3.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
@@ -1439,8 +1600,57 @@
             "time": "2017-11-10T16:38:39+00:00"
         },
         {
+            "name": "symfony/finder",
+            "version": "v3.3.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/finder.git",
+                "reference": "138af5ec075d4b1d1bd19de08c38a34bb2d7d880"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/138af5ec075d4b1d1bd19de08c38a34bb2d7d880",
+                "reference": "138af5ec075d4b1d1bd19de08c38a34bb2d7d880",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9|>=7.0.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Finder\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Finder Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-11-05T15:47:03+00:00"
+        },
+        {
             "name": "symfony/http-foundation",
-            "version": "v3.3.12",
+            "version": "v3.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
@@ -1552,7 +1762,7 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v3.3.12",
+            "version": "v3.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",

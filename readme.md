@@ -56,3 +56,13 @@ return function (Dispatcher $events) {
     });
 };
 ```
+
+## Contributing
+
+We adhere to the PSR standards. If you're interested in working on a Pull Request
+make sure to open one early on, simply prefix it with "WIP" to indicate a "Work
+in Progress" version. This allows early guidance towards the best result and less
+wasted time on your and our behalf.
+
+In case your contribution is merged into a package of Discodian, you grant Discodian
+full permission to use your contribution without any need for attribution.
