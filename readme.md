@@ -66,3 +66,9 @@ wasted time on your and our behalf.
 
 In case your contribution is merged into a package of Discodian, you grant Discodian
 full permission to use your contribution without any need for attribution.
+
+## Credits
+
+Part of this library was copied from and inspired by the Team Reflex source copyrighted 
+by David Cole. Although the license claim has been dropped for some files, attribution
+is provided via this readme.

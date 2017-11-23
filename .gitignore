@@ -1,4 +1,5 @@
 .env
+studio.json
 cache/
 logs/
 vendor/

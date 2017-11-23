@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a56f1c512da01850abc9170441485ea",
+    "content-hash": "8c78f87253ce87330c19ea76415ffa4b",
     "packages": [
         {
             "name": "discodian/core",
@@ -12,10 +12,11 @@
             "dist": {
                 "type": "path",
                 "url": "workbench/core",
-                "reference": "32f5c3b12b9e3f71b0aeaf711bb14e3c2325a7ca",
+                "reference": "d3caf0a145d0fd4ca7aabac34249c456b58c7c0c",
                 "shasum": null
             },
             "require": {
+                "discodian/parts": "*",
                 "guzzlehttp/guzzle": "^6.3.0",
                 "illuminate/cache": "5.5.*",
                 "illuminate/config": "5.5.*",
@@ -51,6 +52,36 @@
                 }
             ],
             "description": "The Discord bot toolkit for modern php"
+        },
+        {
+            "name": "discodian/parts",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "workbench/parts",
+                "reference": "bb53a75bbffa7abbca35bb32812d11966ff5af89",
+                "shasum": null
+            },
+            "require": {
+                "discodian/core": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Discodian\\Parts\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniël Klabbers",
+                    "email": "daniel@klabbers.email",
+                    "homepage": "https://luceos.com"
+                }
+            ],
+            "description": "The Discord resources used in discodian"
         },
         {
             "name": "doctrine/inflector",
@@ -1878,11 +1909,11 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "discodian/core": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
