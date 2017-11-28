@@ -20,6 +20,9 @@ return [
      */
     'bot-token' => env('DISCORD_BOT_TOKEN'),
 
+    /**
+     * Do not change anything below.
+     */
     'endpoints' => [
         'gateway' => 'wss://gateway.discord.gg',
         'http-api' => 'https://discordapp.com/api/'
