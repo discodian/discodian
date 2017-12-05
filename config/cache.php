@@ -25,11 +25,11 @@ return [
     |
     | Supported: "apc", "array", "database", "file", "memcached", "redis"
     |
-    | Set to null to disable caching completely.
+    | Set to 'null' to disable caching completely.
     |
     */
 
-    'default' => env('CACHE_DRIVER', null),
+    'default' => env('CACHE_DRIVER', 'null'),
 
     /*
     |--------------------------------------------------------------------------
@@ -43,6 +43,10 @@ return [
     */
 
     'stores' => [
+
+        'null' => [
+            'driver' => 'null'
+        ],
 
         'apc' => [
             'driver' => 'apc',

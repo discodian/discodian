@@ -23,11 +23,9 @@ return [
     | to use as your default connection for all database work. Of course
     | you may use many connections at once using the Database library.
     |
-    | Set to null to disable a database connection completely.
-    |
     */
 
-    'default' => env('DB_CONNECTION', null),
+    'default' => env('DB_CONNECTION'),
 
     /*
     |--------------------------------------------------------------------------
