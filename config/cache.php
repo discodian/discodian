@@ -25,11 +25,12 @@ return [
     |
     | Supported: "apc", "array", "database", "file", "memcached", "redis"
     |
-    | Set to 'null' to disable caching completely.
+    | Set to 'null' to disable caching completely. But only do so when
+    | you have a fallback in place.
     |
     */
 
-    'default' => env('CACHE_DRIVER', 'null'),
+    'default' => env('CACHE_DRIVER', 'array'),
 
     /*
     |--------------------------------------------------------------------------
@@ -88,9 +89,8 @@ return [
 
         'redis' => [
             'driver' => 'redis',
-            'connection' => 'default',
+            'connection' => env('REDIS_CACHE_CONNECTION', 'default'),
         ],
-
     ],
 
     /*
