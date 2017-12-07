@@ -16,12 +16,21 @@ return [
     /**
      * Set up an application and mark it as Bot.
      *
+     * @var string
      * @see https://discordapp.com/developers/applications/me
      */
     'bot-token' => env('DISCORD_BOT_TOKEN'),
 
     /**
+     * Set the initial admins by specifying their User Ids.
+     *
+     * @var array
+     */
+    'admins' => explode(',', env('DISCORD_ADMINS', '')),
+
+    /**
      * Do not change anything below.
+     * @warn Really, don't.. Leeeeroy Jenkins!
      */
     'endpoints' => [
         'gateway' => 'wss://gateway.discord.gg',
@@ -30,5 +39,5 @@ return [
     'versions' => [
         'gateway' => 6,
         'http-api' => 6
-    ]
+    ],
 ];
