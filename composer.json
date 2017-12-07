@@ -12,7 +12,8 @@
         }
     ],
     "require": {
-        "discodian/core": "@dev"
+        "discodian/core": "@dev",
+        "discodian/ext-jira": "@dev"
     },
     "config": {
         "sort-packages": true
