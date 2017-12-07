@@ -13,7 +13,8 @@
     ],
     "require": {
         "discodian/core": "@dev",
-        "discodian/ext-jira": "@dev"
+        "discodian/ext-jira": "@dev",
+        "discodian/ext-pusher": "@dev"
     },
     "config": {
         "sort-packages": true
