@@ -16,6 +16,11 @@
         "discodian/ext-jira": "@dev",
         "discodian/ext-pusher": "@dev"
     },
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    },
     "config": {
         "sort-packages": true
     },

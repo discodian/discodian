@@ -1,8 +1,13 @@
 # Discodian
 
-*Discodian (Discord Custodian), the extensible php toolkit for creating your own Discord bot.*
+*Discodian (Discord Custodian), the extensible php toolkit to create your own Discord bot.*
 
-> This is a work in progress.
+> Please note [sharding is not yet supported](https://github.com/discodian/discodian/issues/2).
+
+## Requirements
+
+- PHP 7.1 or up.
+- Some knowledge about [composer](http://getcomposer.org).
 
 ## Installation
 
@@ -12,14 +17,14 @@ composer create-project discodian/discodian
 
 ## Configuration
 
-Copy `.env.example` to `.env` and add any necessary configuration settings.
-
 Make sure to get a bot token from the [developer portal](https://discordapp.com/developers/applications/me).
 
 - New App.
 - Under section "Bot" click "Create a Bot User".
 - Under section "Bot" click "click to reveal" next to Token. This is the bot token.
 - Feel free to configure the bot to your liking.
+
+Copy `.env.example` to `.env` if it doesn't exist yet and add any necessary configuration settings.
 
 ## Run
 
@@ -57,6 +62,17 @@ return function (Dispatcher $events) {
 };
 ```
 
+### Developing the extension
+
+I recommend creating a `workbench` directory inside the project. For each extension you write
+you can create a folder, eg `amazing-extension` which houses your extension composer.json file
+and the bootstrap.php file. 
+
+Use [Studio](https://github.com/franzliedke/studio) while in the project directory to load
+the extension. This generates a studio.json file. You can now install your extension from
+the project directory using `composer require github-username/discodian-amazing-extension`. This
+will generate a symlink from the vendor folder to your workbench.
+
 ## Contributing
 
 We adhere to the PSR standards. If you're interested in working on a Pull Request
@@ -71,4 +87,4 @@ full permission to use your contribution without any need for attribution.
 
 Part of this library was copied from and inspired by the Team Reflex source copyrighted 
 by David Cole. Although the license claim has been dropped for some files, attribution
-is provided via this readme.
+is provided via this readme. Thank you for the hard work, it is very much appreciated!
