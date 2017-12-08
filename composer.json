@@ -12,9 +12,7 @@
         }
     ],
     "require": {
-        "discodian/core": "@dev",
-        "discodian/ext-jira": "@dev",
-        "discodian/ext-pusher": "@dev"
+        "discodian/core": "@dev"
     },
     "scripts": {
         "post-root-package-install": [
