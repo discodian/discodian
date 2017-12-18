@@ -1,12 +1,12 @@
+[![Packagist](https://img.shields.io/packagist/v/discodian/core.svg)](https://packagist.org/packages/discodian/core)
+[![Packagist](https://img.shields.io/packagist/dt/discodian/core.svg)](https://packagist.org/packages/discodian/core)
+[![Join our Discord server](https://discordapp.com/api/guilds/380697983102222345/embed.png)](https://discord.gg/erybZg6)
+
 # Discodian
 
 *Discodian (Discord Custodian), the extensible php toolkit to create your own Discord bot.*
 
 > Please note [sharding is not yet supported](https://github.com/discodian/discodian/issues/2).
-
-[![Packagist](https://img.shields.io/packagist/v/discodian/core.svg)](https://packagist.org/packages/discodian/core)
-[![Packagist](https://img.shields.io/packagist/dt/discodian/core.svg)](https://packagist.org/packages/discodian/core)
-[![Join our Discord server](https://discordapp.com/api/guilds/380697983102222345/embed.png)](https://discord.gg/erybZg6)
 
 ## Requirements
 
