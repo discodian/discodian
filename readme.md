@@ -38,6 +38,21 @@ Fire up the bot using the following command:
 php discodian
 ```
 
+Possibly you'd like to have your bot run in production permanently. The easiest way to do so is using
+[supervisor](http://supervisord.org/index.html). Here's an example config you can use (assuming your bot is installed in `/home/bot`:
+
+```conf
+[program:your-bot]
+process_name=%(program_name)s
+command=php /home/bot/discodian
+autostart=true
+autorestart=true
+user=bot
+numprocs=1
+redirect_stderr=true
+stdout_logfile=/home/bot/bot.log
+```
+
 ## Extensions
 
 Create a composer-based package and make sure you use type "discodian-extension" in the composer.json
