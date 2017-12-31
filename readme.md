@@ -1,4 +1,7 @@
+
+
 [![Packagist](https://img.shields.io/packagist/v/discodian/discodian.svg)](https://packagist.org/packages/discodian/discodian)
+[![Packagist](https://img.shields.io/packagist/v/discodian/core.svg)](https://packagist.org/packages/discodian/core)
 [![Packagist](https://img.shields.io/packagist/dt/discodian/discodian.svg)](https://packagist.org/packages/discodian/discodian)
 [![Join our Discord server](https://discordapp.com/api/guilds/380697983102222345/embed.png)](https://discord.gg/erybZg6)
 
